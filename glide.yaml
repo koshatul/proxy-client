@@ -1,0 +1,7 @@
+package: github.com/koshatul/proxy-client
+import:
+- package: github.com/sirupsen/logrus
+- package: github.com/spf13/cobra
+- package: github.com/spf13/viper
+- package: go.uber.org/multierr
+- package: github.com/pires/go-proxyproto

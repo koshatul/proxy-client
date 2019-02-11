@@ -1,0 +1,66 @@
+hash: 57c617ce5e8f5bc4926303fdfc629feada47c09c8c83ca9f1d7d6de4796bfb4b
+updated: 2019-02-11T13:25:39.816641+10:00
+imports:
+- name: github.com/fsnotify/fsnotify
+  version: ccc981bf80385c528a65fbfdd49bf2d8da22aa23
+- name: github.com/hashicorp/hcl
+  version: 65a6292f0157eff210d03ed1bf6c59b190b8b906
+  subpackages:
+  - hcl/ast
+  - hcl/parser
+  - hcl/printer
+  - hcl/scanner
+  - hcl/strconv
+  - hcl/token
+  - json/parser
+  - json/scanner
+  - json/token
+- name: github.com/inconshreveable/mousetrap
+  version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
+- name: github.com/konsorten/go-windows-terminal-sequences
+  version: 5c8c8bd35d3832f5d134ae1e1e375b69a4d25242
+- name: github.com/magiconair/properties
+  version: 7757cc9fdb852f7579b24170bcacda2c7471bb6a
+- name: github.com/mitchellh/mapstructure
+  version: 3536a929edddb9a5b34bd6861dc4a9647cb459fe
+- name: github.com/pelletier/go-toml
+  version: 27c6b39a135b7dc87a14afb068809132fb7a9a8f
+- name: github.com/pires/go-proxyproto
+  version: 4d51b51e3bfc23ac5f4384478ff64940f34a5d63
+- name: github.com/sirupsen/logrus
+  version: e1e72e9de974bd926e5c56f83753fba2df402ce5
+- name: github.com/spf13/afero
+  version: a5d6946387efe7d64d09dcba68cdd523dc1273a3
+  subpackages:
+  - mem
+- name: github.com/spf13/cast
+  version: 8c9545af88b134710ab1cd196795e7f2388358d7
+- name: github.com/spf13/cobra
+  version: ef82de70bb3f60c65fb8eebacbb2d122ef517385
+- name: github.com/spf13/jwalterweatherman
+  version: 94f6ae3ed3bceceafa716478c5fbf8d29ca601a1
+- name: github.com/spf13/pflag
+  version: 24fa6976df40757dce6aea913e7b81ade90530e1
+- name: github.com/spf13/viper
+  version: 6d33b5a963d922d182c91e8a1c88d81fd150cfd4
+- name: go.uber.org/atomic
+  version: 1ea20fb1cbb1cc08cbd0d913a96dead89aa18289
+- name: go.uber.org/multierr
+  version: 3c4937480c32f4c13a875a1829af76c98ca3d40a
+- name: golang.org/x/crypto
+  version: 057139ce5d2bdbe6fe73c53679e24e9cf007f637
+  subpackages:
+  - ssh/terminal
+- name: golang.org/x/sys
+  version: 2320a9c15898af1b1b24f99700d5c1e957f9d8cf
+  subpackages:
+  - unix
+  - windows
+- name: golang.org/x/text
+  version: 1cbadb444a806fd9430d14ad08967ed91da4fa0a
+  subpackages:
+  - transform
+  - unicode/norm
+- name: gopkg.in/yaml.v2
+  version: eb3733d160e74a9c7e442f435eb3bea458e1d19f
+testImports: []
