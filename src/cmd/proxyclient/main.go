@@ -15,7 +15,7 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "proxyclient [--proto=tcp4|udp4|unix] <host:port> <proxysource:port> [proxyserver:port]",
+	Use:   "proxyclient [--proto=tcp4|udp4|unix] [--proto-version=1|2] <host:port> <proxysource:port> [proxyserver:port]",
 	Short: "proxyclient sends fake PROXY headers for a TCP connection to assist in testing PROXY support in servers",
 	Long:  "<host:port> is the PROXY server host and port, <proxysource:port> is the source and port to send as the source in the PROXY header, [proxyserver:port] is the optional proxy server and port to send in the PROXY header",
 	Args:  cobra.MinimumNArgs(2),
@@ -27,7 +27,7 @@ func init() {
 
 	rootCmd.PersistentFlags().BoolP("debug", "d", false, "Debug output. ")
 	rootCmd.PersistentFlags().StringP("proto", "p", "tcp4", "PROXY header protocol definition")
-	rootCmd.PersistentFlags().Int("proto-version", 2, "PROXY protocol version (default: 2)")
+	rootCmd.PersistentFlags().Int("proto-version", 2, "PROXY protocol version")
 
 	err := multierr.Combine(
 		viper.BindPFlag("debug", rootCmd.PersistentFlags().Lookup("debug")),
